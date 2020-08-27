@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "postinstall": "cd ios && rbenv install --skip-existing && bundle install && bundle exec pod install",
+    "setup:ios": "cd ios && rbenv install --skip-existing && bundle install && bundle exec pod install",
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "start": "react-native start",
