@@ -4,6 +4,9 @@
   "private": true,
   "scripts": {
     "setup:ios": "cd ios && rbenv install --skip-existing && bundle install && bundle exec pod install",
+    "setup:ruby": "cd ios && rbenv install --skip-existing && yarn setup:bundler && rbenv rehash",
+    "setup:bundler": "gem install bundler -v 2.0.1 --force",
+    "clean": "rm -rf node_modules ios/Pods",
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "start": "react-native start",
